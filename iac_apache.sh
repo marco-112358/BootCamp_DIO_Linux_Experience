@@ -37,6 +37,7 @@ echo "Baixando app para /tmp (Aguarde...)"
 
 cd /tmp
 wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
+unzip main.zip
 
 echo ""
 echo "Feito!"
@@ -44,7 +45,7 @@ echo ""
 
 echo "Copiando app para /var/www/html (Aguarde...)"
 
-cp -R /var/www/html
+cp -R * /var/www/html/
 
 echo "--------------------- PROCESSO FINALIZADO! -------------------"
 
